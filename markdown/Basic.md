@@ -6,12 +6,22 @@
 var arr [5]int // 배열
 var p *int // 정수형 포인터
 var x int = 10 // 인트형 자료형을 선언
+const x int = 10 // 상수 선언
 func(int,int) // 두정수를 받음
 func(int) int // 정수를 받고 정수를 리턴함
 
 func(int, func(int,int)) func(int) int // 함수를 인자로 받고 반환함
 
+const ( // 열거형
+	Sunday = 0
+	Monday = 1
+	Tuesday = 2
+	Thursday = 3
+	Friday = 4
+	Saturday = 5
+)
 ```
+
 
 - 타입 추론
 
@@ -48,6 +58,16 @@ func fac(n int) int {
 	return n * fac(n-1)
 }
 
+```
+
+```go
+switch i { //switch 문
+case -1, -2 :
+	fmt.Println(i, "는 음수입니다.")
+case 1,2 :
+    fmt.Println(i, "는 양수입니다")
+    fallthrough // break문과 반대로 이아래도 실행되겠금함
+}
 ```
 
 ```go
