@@ -1,27 +1,22 @@
 package main
 
 import (
+	"strings"
 	"fmt"
-	"time"
+	"reflect"
 )
 
+func TitleCase(s string) string{
+	return strings.Title(s)
+}
+
 func main() {
-	fmt.Println("main 함수시작")
+	caption := "go is an open source project"
+	title := TitleCase(caption)
+	fmt.Println(title)
 
-	go long()
-	go short()
-	time.Sleep(5 * time.Second)
-	fmt.Println("main 끝")
-}
-
-func short(){
-	fmt.Println("short 시작")
-	time.Sleep(2 * time.Second)
-	fmt.Println("short 끝")
-}
-
-func long(){
-	fmt.Println("long 시작")
-	time.Sleep(3 * time.Second)
-	fmt.Println("long 끝")
+	titleFuncValue := reflect.ValueOf(TitleCase)
+	values := titleFuncValue.Call([]reflect.Value{reflect.ValueOf(caption)})
+	title = values[0].String()
+	fmt.Println(title)
 }
