@@ -30,9 +30,9 @@
 
 - ### [고루틴](https://github.com/banziha104/GoBasic/blob/master/markdown/GoRoutine.md)
 
-- ### [환경설정](https://github.com/banziha104/GoBasic/blob/master/markdown/Settings.md)
+- ### [에러처리](https://github.com/banziha104/GoBasic/blob/master/markdown/Error.md)
 
-- ### [환경설정](https://github.com/banziha104/GoBasic/blob/master/markdown/Settings.md)
+- ### [기본 라이브러리](https://github.com/banziha104/GoBasic/blob/master/markdown/Lib.md)
 
 - ### [환경설정](https://github.com/banziha104/GoBasic/blob/master/markdown/Settings.md)
 
